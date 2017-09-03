@@ -1,0 +1,7 @@
+spawn snapcraft login
+expect "Email:"
+send "$USERNAME\r"
+expect "Password:"
+send "$PASSWORD\r"
+expect eof
+
