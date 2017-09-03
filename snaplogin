@@ -1,7 +1,7 @@
 spawn snapcraft login
 expect "Email:"
-send "$USERNAME\r"
+send "$env(USERNAME)\r"
 expect "Password:"
-send "$PASSWORD\r"
+send "$env(PASSWORD)\r"
 expect eof
 
