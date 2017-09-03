@@ -1,10 +1,6 @@
 #!/bin/bash
 
-mkdir /build/
-
-git clone $REPO /build/
-
-cd /build/
+cd $CIRCLE_WORKING_DIRECTORY
 
 snapcraft
 
